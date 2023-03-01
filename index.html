@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css.map" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+  <link rel="stylesheet" href='css/styles.css' />
+  <title>Web Application</title>
+</head>
+
+
+
+
+<body>
+
+  <section class="body">
+
+    <div class="bodySection">
+      <div class="row headSection">
+        <div class="col">
+          Folder Section
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row" id="rootId">
+          <div class="col">
+            <button class="btn" id="rootFolder">
+              Folder
+            </button>
+
+            <button class="btn btn-outline-primary addButton" id="addButtonId">
+             + New
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!---display hide buttons-->
+      <div class="container-fluid" id="subRootId" style="display: none;">
+        <div class="newFolderSection" id="newSubFolder">
+           
+        </div>
+      </div>
+
+
+      
+      <div class="row" id="createSection" style="display: none;">
+        <div class="col d-flex justify-content-center">
+          <div class="col p-2">
+            Add folder
+            <input placeholder="Folder name" id="folderNameId">
+            <button class="btn btn-outline-primary" id="createButtonId">
+              create
+            </button>
+  
+            <button class="btn btn-outline-primary" id="cancelButtonId">
+              cancel
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row" id="deleteSection" style="display: none;">
+        <div class="col d-flex justify-content-center">
+          <div class="col p-2">
+            Delete folder
+            <button class="btn btn-outline-primary" id="deleteButtonId">
+              Delete
+            </button>
+            <button class="btn btn-outline-primary" id="cancelButtonId">
+              cancel
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!--js script file-->
+  <script src="script.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js.map"></script>
+
+</body>
+
+</html>
